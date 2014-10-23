@@ -1,0 +1,13 @@
+{
+    "name": "vladyslav/vladyslav-lysenko",
+    "authors": [
+        {
+            "name": "Lysenko Vladyslav",
+            "email": "stalkervlad2011@ukr.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}
