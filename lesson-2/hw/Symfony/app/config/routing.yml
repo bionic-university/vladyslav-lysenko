@@ -1,0 +1,4 @@
+vladyslav_books:
+    resource: "@VladyslavBooksBundle/Resources/config/routing.yml"
+    prefix:   /
+

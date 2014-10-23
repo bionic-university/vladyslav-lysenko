@@ -1,0 +1,4 @@
+services:
+#    vladyslav_books.example:
+#        class: Vladyslav\Bundle\BooksBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

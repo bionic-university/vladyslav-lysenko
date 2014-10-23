@@ -1,0 +1,25 @@
+Vladyslav\Bundle\BooksBundle\Entity\Book:
+    type: entity
+    table: null
+    repositoryClass: Vladyslav\Bundle\BooksBundle\Entity\BookRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '25'
+        author:
+            type: string
+            length: '25'
+        description:
+            type: string
+            length: 255
+    oneToMany:
+            orders:
+                targetEntity:  Vladyslav\Bundle\BooksBundle\Entity\Orders
+                mappedBy: book
+    lifecycleCallbacks: {  }

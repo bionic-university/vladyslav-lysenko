@@ -1,0 +1,20 @@
+Vladyslav\Bundle\BooksBundle\Entity\Orders:
+    type: entity
+    table: null
+    repositoryClass: Vladyslav\Bundle\BooksBundle\Entity\OrdersRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+
+    manyToOne:
+        book:
+            targetEntity:  Vladyslav\Bundle\BooksBundle\Entity\Book
+            inversedBy: orders
+    manyToOne:
+        user:
+            targetEntity:  Vladyslav\Bundle\BooksBundle\Entity\User
+            inversedBy: orders
+    lifecycleCallbacks: {  }
