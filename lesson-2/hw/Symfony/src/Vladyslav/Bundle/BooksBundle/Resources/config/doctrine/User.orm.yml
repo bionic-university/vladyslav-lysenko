@@ -19,7 +19,7 @@ Vladyslav\Bundle\BooksBundle\Entity\User:
             type: string
             length: '25'
     oneToMany:
-        orders:
-            targetEntity:  Vladyslav\Bundle\BooksBundle\Entity\Orders
-            mappedBy: user
+            orders:
+                targetEntity:  Vladyslav\Bundle\BooksBundle\Entity\Orders
+                mappedBy: user
     lifecycleCallbacks: {  }

@@ -13,7 +13,6 @@ Vladyslav\Bundle\BooksBundle\Entity\Orders:
         book:
             targetEntity:  Vladyslav\Bundle\BooksBundle\Entity\Book
             inversedBy: orders
-    manyToOne:
         user:
             targetEntity:  Vladyslav\Bundle\BooksBundle\Entity\User
             inversedBy: orders
