@@ -27,6 +27,18 @@ class CategoryController extends Controller
      */
     public function indexAction()
     {
+        $reverser = $this->get('string_reverser');
+        $s = $reverser->reverse("1234");
+       // var_dump($s);
+
+        $magic_reverser = $this->get('magic_string_reverser');
+        $s1 = $magic_reverser->reverse("abcd");
+        var_dump($s1);
+        die;
+
+
+
+       // $smth = $this->get('');
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('BionicUniversityBlogBundle:Category')->findAll();

@@ -1,0 +1,10 @@
+parameters:
+
+services:
+  string_reverser:
+    class: BionicUniversity\Bundle\BlogBundle\StringManipulator\StringReverser
+  magic_string_reverser:
+    class: BionicUniversity\Bundle\BlogBundle\StringManipulator\MagicStringReverser
+    arguments: [%magic_char%]
+    calls:
+      - [setStringReverser,[@string_reverser]]
