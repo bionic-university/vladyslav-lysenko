@@ -1,0 +1,12 @@
+parameters:
+
+services:
+  send_email:
+    class: BionicUniversity\Bundle\ProjectManagementBundle\EmailServices\SendMail
+    arguments: [@mailer]
+  on_user_create:
+    class: BionicUniversity\Bundle\ProjectManagementBundle\EventListener\UserListener
+    calls:
+     - [setMailService,[@send_email]]
+    tags:
+     - {name: kernel.event_listener, event: on_user_create , method: onUserCreate}
